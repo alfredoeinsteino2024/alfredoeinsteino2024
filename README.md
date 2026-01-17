@@ -1,4 +1,4 @@
-# 👋 Hi, I'm Alfred Samuel (@alfredoeinsteino2024)
+# 👋 Hi, I'm Toluwanimi Alfred (@alfredoeinsteino2024)
 
 ## 🚀 About Me
 - 💻 IoT and Embedded Systems Enthusiast | C Programmer
