@@ -2,7 +2,7 @@
 
 ## 🚀 About Me
 - 💻 IoT and Embedded Systems Enthusiast | C Programmer
-- 🎓 Currently learning IoT, Embedded Systems, and Game Development
+- 🎓 Currently learning IoT, Embedded Systems, and Game Engine Development
 - 🎮 Building projects with SDL2, C, and embedded hardware
 - 🔧 Exploring microcontrollers and real-time systems
 - 🌱 Always learning new technologies and taking on challenges
