@@ -16,7 +16,7 @@
 - SDL2, SDL2_image
 
 **Tools & IDEs:**
-- VS Code, Arduino IDE, Git, MinGW GCC
+- VS Code, Arduino IDE, MinGW GCC
 
 **Hardware:**
 - Arduino
