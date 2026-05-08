@@ -1,5 +1,4 @@
 # 👋 Hi, I'm Toluwanimi Alfred (@alfredoeinsteino2024)
-
 ## 🚀 About Me
 - 💻 Aspiring Game Engine Developer | Embedded Systems & C Programmer
 - 🎓 Currently learning IoT, Embedded Systems, and Game Engine Development
@@ -7,13 +6,12 @@
 - 🔧 Exploring microcontrollers and real-time systems
 - 🌱 Always learning new technologies and taking on challenges
 - 🙏 Trusting God through the journey
-
 ## 🛠️ Tech Stack
 **Languages:**
 - C, C++ (Embedded)
 
 **Libraries & Frameworks:**
-- SDL2, SDL2_image
+- SDL2, SDL2_image, SDL2_ttf
 
 **Tools & IDEs:**
 - VS Code, Arduino IDE, MinGW GCC
@@ -27,6 +25,7 @@
 
 **Currently Learning:**
 - SDL2 Game Development
+- Text rendering with SDL2_ttf
 - IoT systems with Arduino and ESP boards
 - Collision detection and camera systems in games
 - Embedded C programming
