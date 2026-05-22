@@ -90,13 +90,13 @@ An embedded payment terminal prototype for emerging market merchants, built as a
 
 ## 🎯 Current Projects
 
-| Project | Description | Stack |
-|---|---|---|
-| **ChainEngineers Midnight** | Confidential embedded payment terminal on Midnight Network | C, SDL2, ZK Proofs |
-| **ChainEngineers** | Solana-based embedded payment terminal | C, SDL2, Solana |
-| **Flappy Puppy** | SDL2-based 2D game | C, SDL2 |
-| **Smart Patient Monitoring System** | IoT health monitor with biometric & environmental sensors | ESP32, C |
-| **14 C Project Challenge** | Mastering C and systems programming through project-based learning | C |
+| Project | Description | Stack | Status |
+|---|---|---|---|
+| **ChainEngineers Midnight** | Confidential embedded payment terminal on Midnight Network | C, SDL2, ZK Proofs | ✅ Complete |
+| **ChainEngineers** | Solana-based embedded payment terminal | C, SDL2, Solana | ✅ Complete |
+| **Flappy Puppy** | SDL2 2D game — physics, sprites, animation, audio and scoring implemented | C, SDL2, SDL2_mixer | 🚧 In Progress |
+| **Smart Patient Monitoring System** | IoT health monitor with biometric & environmental sensors | ESP32, C | 🚧 In Progress |
+| **14 C Project Challenge** | Mastering C and systems programming through project-based learning | C | 🚧 In Progress |
 
 ---
 
