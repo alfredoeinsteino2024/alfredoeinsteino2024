@@ -2,7 +2,7 @@
 
 # 👋 Hi, I'm Toluwanimi Alfred (@alfredoeinsteino2024)
 
-**Embedded systems and C programming student building SDL2, IoT, and microcontroller projects**
+**Embedded systems and C programmer building IoT simulators, SDL2 applications, and agentic testing platforms**
 
 [![GitHub](https://img.shields.io/badge/GitHub-alfredoeinsteino2024-181717?style=flat-square&logo=github)](https://github.com/alfredoeinsteino2024)
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-toluwanimialfred-0A66C2?style=flat-square&logo=linkedin)](https://www.linkedin.com/in/toluwanimialfred/)
@@ -15,15 +15,35 @@
 ## 🚀 About Me
 
 - 🔧 Embedded Systems and C Programmer, aspiring **Game Engine Developer**
-- 🎓 Mechatronics undergraduate focused on **IoT**, **embedded systems**, and **blockchain systems**
+- 🎓 Mechatronics undergraduate focused on **IoT**, **embedded systems**, and **agentic software testing**
+- 🛡️ Building **AI-powered testing platforms** that validate IoT device management systems
 - 💳 Building **confidential payment systems** using C and embedded hardware
 - 🖥️ Developing **SDL2 applications**, system-level projects, and hardware integrations
 - ⚡ Working with **microcontrollers**, real-time systems, and decentralized payment concepts
+- 🤖 Using **Claude Code** as my primary AI-assisted development tool across all projects
 - 📈 Continuously building and improving through hands-on engineering work
 
 ---
 
-## 🔗 Latest Project: ChainEngineers Midnight
+## 🛡️ Latest Project: SensorSentinel
+
+> **Built for UiPath AgentHack 2026 · Track 3: Agentic Software Testing with UiPath Test Cloud**
+
+An AI-powered agentic testing platform that validates IoT device management systems using three specialized test agents orchestrated through UiPath Test Cloud. Built on the insight that IoT systems are notoriously difficult to test — sensors produce unpredictable data, edge cases are extreme, and failures have real-world consequences.
+
+- 🔬 **C-based IoT device simulator** generating realistic and anomalous sensor data (temp/humidity/voltage) with XOR-shift RNG and chaos injection mode
+- 🌐 **Python Flask REST API** with thread-safe deque store, severity classification, and real-time anomaly detection across 5 anomaly types
+- 📊 **Live web dashboard** with Chart.js visualizations and real-time anomaly feed
+- 🤖 **3 specialized AI test agents** — API Agent (36 tests), UI Agent (27 tests), Anomaly Detection Agent (32 tests)
+- ✅ **95/95 test cases passing** across API correctness, UI behavior, and anomaly detection accuracy
+- 🔁 **UiPath Test Cloud** as the orchestration and governance layer tying all agents together
+- 🧠 Built end-to-end with **Claude Code** — architecture, C simulator, Flask API, dashboard, and all 95 test cases
+
+[![Repo](https://img.shields.io/badge/Repo-GitHub-181717?style=flat-square&logo=github)](https://github.com/alfredoeinsteino2024/SensorSentinel)
+
+---
+
+## 🔗 Previous Project: ChainEngineers Midnight
 
 > **Built for MLH Midnight Hackathon 2026 · DeFi Track**
 
@@ -64,13 +84,17 @@ An embedded payment terminal prototype for emerging market merchants, built as a
 ### Languages
 ![C](https://img.shields.io/badge/C-00599C?style=flat-square&logo=c&logoColor=white)
 ![C++](https://img.shields.io/badge/C++-00599C?style=flat-square&logo=cplusplus&logoColor=white)
+![Python](https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white)
 
 ### Systems & Graphics
 ![SDL2](https://img.shields.io/badge/SDL2-1C2C3E?style=flat-square)
 ![Winsock2](https://img.shields.io/badge/Winsock2-0078D4?style=flat-square&logo=windows&logoColor=white)
 ![Multithreading](https://img.shields.io/badge/Multithreaded%20Programming-555555?style=flat-square)
 
-### Backend
+### Backend & Testing
+![Flask](https://img.shields.io/badge/Flask-000000?style=flat-square&logo=flask&logoColor=white)
+![pytest](https://img.shields.io/badge/pytest-0A9EDC?style=flat-square&logo=pytest&logoColor=white)
+![Selenium](https://img.shields.io/badge/Selenium-43B02A?style=flat-square&logo=selenium&logoColor=white)
 ![Node.js](https://img.shields.io/badge/Node.js-339933?style=flat-square&logo=nodedotjs&logoColor=white)
 ![Express](https://img.shields.io/badge/Express-000000?style=flat-square&logo=express&logoColor=white)
 
@@ -80,6 +104,10 @@ An embedded payment terminal prototype for emerging market merchants, built as a
 ![ESP8266](https://img.shields.io/badge/ESP8266-E7352C?style=flat-square)
 ![MAX30105](https://img.shields.io/badge/MAX30105%20Heart%20Rate%20Sensor-FF4444?style=flat-square)
 ![DS18B20](https://img.shields.io/badge/DS18B20%20Temp%20Sensor-FF8800?style=flat-square)
+
+### Agentic Testing & Orchestration
+![UiPath](https://img.shields.io/badge/UiPath%20Test%20Cloud-FA4616?style=flat-square&logo=uipath&logoColor=white)
+![Claude Code](https://img.shields.io/badge/Claude%20Code-D97757?style=flat-square)
 
 ### Blockchain
 ![Midnight Network](https://img.shields.io/badge/Midnight%20Network-0D0D0D?style=flat-square)
@@ -92,9 +120,10 @@ An embedded payment terminal prototype for emerging market merchants, built as a
 
 | Project | Description | Stack | Status |
 |---|---|---|---|
+| **SensorSentinel** | AI-powered agentic testing platform for IoT device management | C, Python, Flask, pytest, UiPath | ✅ Complete |
 | **ChainEngineers Midnight** | Confidential embedded payment terminal on Midnight Network | C, SDL2, ZK Proofs | ✅ Complete |
 | **ChainEngineers** | Solana-based embedded payment terminal | C, SDL2, Solana | ✅ Complete |
-| **Flappy Puppy** | SDL2 2D game — physics, sprites, animation, audio and scoring implemented | C, SDL2, SDL2_mixer | 🚧 In Progress |
+| **Flappy Puppy** | SDL2 2D game — physics, sprites, animation, audio and scoring | C, SDL2, SDL2_mixer | 🚧 In Progress |
 | **Smart Patient Monitoring System** | IoT health monitor with biometric & environmental sensors | ESP32, C | 🚧 In Progress |
 | **14 C Project Challenge** | Mastering C and systems programming through project-based learning | C | 🚧 In Progress |
 
