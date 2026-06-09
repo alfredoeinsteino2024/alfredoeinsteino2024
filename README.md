@@ -2,7 +2,7 @@
 
 # 👋 Hi, I'm Toluwanimi Alfred (@alfredoeinsteino2024)
 
-**Embedded systems and C programmer building IoT simulators, SDL2 applications, and agentic testing platforms**
+**Embedded systems and C programmer building IoT simulators, aerodynamics engines, SDL2 applications, and agentic testing platforms**
 
 [![GitHub](https://img.shields.io/badge/GitHub-alfredoeinsteino2024-181717?style=flat-square&logo=github)](https://github.com/alfredoeinsteino2024)
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-toluwanimialfred-0A66C2?style=flat-square&logo=linkedin)](https://www.linkedin.com/in/toluwanimialfred/)
@@ -16,6 +16,7 @@
 
 - 🔧 Embedded Systems and C Programmer, aspiring **Game Engine Developer**
 - 🎓 Mechatronics undergraduate focused on **IoT**, **embedded systems**, and **agentic software testing**
+- ✈️ Building **AeroForge** — a browser-based aircraft aerodynamics simulator with a C physics engine compiled to WebAssembly
 - 🛡️ Building **AI-powered testing platforms** that validate IoT device management systems
 - 💳 Building **confidential payment systems** using C and embedded hardware
 - 🖥️ Developing **SDL2 applications**, system-level projects, and hardware integrations
@@ -25,11 +26,30 @@
 
 ---
 
-## 🛡️ Latest Project: SensorSentinel
+## ✈️ Latest Project: AeroForge
+
+> **Browser-based Aircraft Aerodynamics Simulator**
+
+A real-time wing aerodynamics simulator running entirely in the browser, powered by a C physics engine compiled to WebAssembly. Students can design any wing shape and instantly see the aerodynamic consequences.
+
+- ⚙️ **C physics engine** implementing the Vortex Lattice Method (VLM) with Biot-Savart horseshoe vortex computation
+- 🔬 **Gaussian elimination solver** computing lift distribution across arbitrary wing geometries
+- 🌐 **Compiled to WebAssembly** via Emscripten — near-native C performance running in the browser
+- 🎮 **Three.js 3D visualization** with real-time pressure color mapping (red = high pressure, blue = low pressure)
+- 💨 **Animated streamlines** showing airflow behavior over the wing surface
+- ⚠️ **Stall warning system** — wing flashes red when angle of attack exceeds critical threshold
+- 📊 **Live CL, CD, L/D ratio, pitch moment, and lift force** — all computed from real aerodynamic equations
+- 🎛️ Parametric controls: wingspan, chord, taper, sweep angle, dihedral, angle of attack, airspeed
+
+[![Repo](https://img.shields.io/badge/Repo-GitHub-181717?style=flat-square&logo=github)](https://github.com/alfredoeinsteino2024/aeroforge)
+
+---
+
+## 🛡️ Previous Project: SensorSentinel
 
 > **Built for UiPath AgentHack 2026 · Track 3: Agentic Software Testing with UiPath Test Cloud**
 
-An AI-powered agentic testing platform that validates IoT device management systems using three specialized test agents orchestrated through UiPath Test Cloud. Built on the insight that IoT systems are notoriously difficult to test — sensors produce unpredictable data, edge cases are extreme, and failures have real-world consequences.
+An AI-powered agentic testing platform that validates IoT device management systems using three specialized test agents orchestrated through UiPath Test Cloud.
 
 - 🔬 **C-based IoT device simulator** generating realistic and anomalous sensor data (temp/humidity/voltage) with XOR-shift RNG and chaos injection mode
 - 🌐 **Python Flask REST API** with thread-safe deque store, severity classification, and real-time anomaly detection across 5 anomaly types
@@ -89,7 +109,14 @@ An embedded payment terminal prototype for emerging market merchants, built as a
 ### Systems & Graphics
 ![SDL2](https://img.shields.io/badge/SDL2-1C2C3E?style=flat-square)
 ![Winsock2](https://img.shields.io/badge/Winsock2-0078D4?style=flat-square&logo=windows&logoColor=white)
+![WebAssembly](https://img.shields.io/badge/WebAssembly-654FF0?style=flat-square&logo=webassembly&logoColor=white)
+![Emscripten](https://img.shields.io/badge/Emscripten-000000?style=flat-square)
 ![Multithreading](https://img.shields.io/badge/Multithreaded%20Programming-555555?style=flat-square)
+
+### Frontend & 3D
+![Three.js](https://img.shields.io/badge/Three.js-000000?style=flat-square&logo=threedotjs&logoColor=white)
+![HTML](https://img.shields.io/badge/HTML5-E34F26?style=flat-square&logo=html5&logoColor=white)
+![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=flat-square&logo=javascript&logoColor=black)
 
 ### Backend & Testing
 ![Flask](https://img.shields.io/badge/Flask-000000?style=flat-square&logo=flask&logoColor=white)
@@ -120,7 +147,8 @@ An embedded payment terminal prototype for emerging market merchants, built as a
 
 | Project | Description | Stack | Status |
 |---|---|---|---|
-| **SensorSentinel** | AI-powered agentic testing platform for IoT device management | C, Python, Flask, pytest, UiPath | ✅ Complete |
+| **AeroForge** | Browser-based aircraft aerodynamics simulator with C+WASM physics engine | C, WebAssembly, Three.js | 🚧 In Progress |
+| **SensorSentinel** | AI-powered agentic testing platform for IoT device management | C, Python, Flask, UiPath | ✅ Complete |
 | **ChainEngineers Midnight** | Confidential embedded payment terminal on Midnight Network | C, SDL2, ZK Proofs | ✅ Complete |
 | **ChainEngineers** | Solana-based embedded payment terminal | C, SDL2, Solana | ✅ Complete |
 | **Flappy Puppy** | SDL2 2D game — physics, sprites, animation, audio and scoring | C, SDL2, SDL2_mixer | 🚧 In Progress |
