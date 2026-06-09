@@ -2,7 +2,7 @@
 
 # 👋 Hi, I'm Toluwanimi Alfred (@alfredoeinsteino2024)
 
-**Embedded systems and C programmer building IoT simulators, aerodynamics engines, SDL2 applications, and agentic testing platforms**
+**Embedded Systems Engineer | C Programmer | Simulation Software Developer**
 
 [![GitHub](https://img.shields.io/badge/GitHub-alfredoeinsteino2024-181717?style=flat-square&logo=github)](https://github.com/alfredoeinsteino2024)
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-toluwanimialfred-0A66C2?style=flat-square&logo=linkedin)](https://www.linkedin.com/in/toluwanimialfred/)
