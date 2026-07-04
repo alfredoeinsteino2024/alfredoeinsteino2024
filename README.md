@@ -2,11 +2,12 @@
 
 # 👋 Hi, I'm Toluwanimi Alfred (@alfredoeinsteino2024)
 
-**Embedded Systems Engineer | C Programmer | Simulation Software Developer**
+**Embedded Systems Engineer | C Programmer | Simulation Software Developer | AgriTech Founder**
 
 [![GitHub](https://img.shields.io/badge/GitHub-alfredoeinsteino2024-181717?style=flat-square&logo=github)](https://github.com/alfredoeinsteino2024)
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-toluwanimialfred-0A66C2?style=flat-square&logo=linkedin)](https://www.linkedin.com/in/toluwanimialfred/)
 [![X](https://img.shields.io/badge/X-AlfredFadipe-000000?style=flat-square&logo=x)](https://x.com/AlfredFadipe)
+[![HarvestIQ](https://img.shields.io/badge/HarvestIQ-Live%20Product-4CAF50?style=flat-square)](https://alfredoeinsteino2024.github.io/harvestiq)
 
 </div>
 
@@ -14,6 +15,7 @@
 
 ## 🚀 About Me
 
+- 🌾 Founder & sole builder of **HarvestIQ** — a live, deployed USSD agritech platform serving Nigerian smallholder farmers
 - 🔧 Embedded Systems and C Programmer, aspiring **Game Engine Developer**
 - 🎓 Mechatronics undergraduate focused on **IoT**, **embedded systems**, and **agentic software testing**
 - ✈️ Building **AeroForge** — a browser-based aircraft aerodynamics simulator with a C physics engine compiled to WebAssembly
@@ -23,6 +25,33 @@
 - ⚡ Working with **microcontrollers**, real-time systems, and decentralized payment concepts
 - 🤖 Using **Claude Code** as my primary AI-assisted development tool across all projects
 - 📈 Continuously building and improving through hands-on engineering work
+
+---
+
+## 🌾 Featured Project: HarvestIQ
+
+> **Postharvest Intelligence for Nigerian Smallholder Farmers — Live on AWS**
+
+Nigerian farmers lose **40% of their harvest** worth **₦5 trillion annually** — not from poor farming, but lack of information in the 72 hours after harvest. HarvestIQ solves this through USSD. No smartphone. No internet. Any phone, any network.
+
+- 📱 **USSD platform** — farmers dial `*384*14367#` on any GSM phone to access market intelligence
+- 💰 **Real-time prices** — live commodity prices from 6 major Nigerian markets (Kano, Lagos, Onitsha, Ibadan, Kaduna, Makurdi)
+- 🤖 **AI storage advisory** — AWS Bedrock (Claude Haiku) generates crop-specific storage guidance
+- 📦 **Produce listing** — farmers list in Nigerian units (bags, crates, tubers, bunches, baskets)
+- 🔔 **SMS price alerts** — farmers set a floor price and get notified the moment the market reaches it
+- 🏪 **Buyer dashboard** — live web portal for traders to browse listings and post demand requests
+- 📲 **SMS price pipeline** — whitelisted market agents submit daily prices via SMS keyword commands
+- ☁️ **Fully serverless** — AWS Lambda, DynamoDB, API Gateway, SNS, EventBridge, Bedrock — all deployed
+- ✅ **15/15 unit tests passing**
+
+**Tech Stack:** Node.js · AWS Lambda · DynamoDB · API Gateway · AWS Bedrock · SNS · EventBridge · Africa's Talking · AWS SAM · GitHub Pages
+
+[![Website](https://img.shields.io/badge/Website-Live-4CAF50?style=flat-square)](https://alfredoeinsteino2024.github.io/harvestiq)
+[![Dashboard](https://img.shields.io/badge/Buyer%20Dashboard-Live-2D6A2D?style=flat-square)](https://alfredoeinsteino2024.github.io/harvestiq/buyer-dashboard.html)
+[![Demo](https://img.shields.io/badge/Demo%20Video-Loom-625DF5?style=flat-square&logo=loom)](https://www.loom.com/share/80ed99dd5a3d4274bf682c34fc8fcbaa)
+[![Repo](https://img.shields.io/badge/Backend-GitHub-181717?style=flat-square&logo=github)](https://github.com/alfredoeinsteino2024/harvestiq-backend)
+
+> Submitted to **Startup Abuja Innovation Challenge 2026** and **OPay National Innovation Challenge 2026** (Team AgroMinds, FUT Minna)
 
 ---
 
@@ -104,7 +133,22 @@ An embedded payment terminal prototype for emerging market merchants, built as a
 ### Languages
 ![C](https://img.shields.io/badge/C-00599C?style=flat-square&logo=c&logoColor=white)
 ![C++](https://img.shields.io/badge/C++-00599C?style=flat-square&logo=cplusplus&logoColor=white)
+![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=flat-square&logo=javascript&logoColor=black)
+![Node.js](https://img.shields.io/badge/Node.js-339933?style=flat-square&logo=nodedotjs&logoColor=white)
 ![Python](https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white)
+
+### Cloud & Serverless
+![AWS Lambda](https://img.shields.io/badge/AWS%20Lambda-FF9900?style=flat-square&logo=awslambda&logoColor=white)
+![DynamoDB](https://img.shields.io/badge/DynamoDB-4053D6?style=flat-square&logo=amazondynamodb&logoColor=white)
+![AWS Bedrock](https://img.shields.io/badge/AWS%20Bedrock-FF9900?style=flat-square&logo=amazon&logoColor=white)
+![API Gateway](https://img.shields.io/badge/API%20Gateway-FF4F8B?style=flat-square&logo=amazon&logoColor=white)
+![AWS SAM](https://img.shields.io/badge/AWS%20SAM-FF9900?style=flat-square&logo=amazon&logoColor=white)
+![SNS](https://img.shields.io/badge/AWS%20SNS-FF9900?style=flat-square&logo=amazon&logoColor=white)
+
+### USSD & Telecom
+![Africa's Talking](https://img.shields.io/badge/Africa's%20Talking-F5A623?style=flat-square)
+![USSD](https://img.shields.io/badge/USSD-2D6A2D?style=flat-square)
+![SMS](https://img.shields.io/badge/SMS%20Gateway-4CAF50?style=flat-square)
 
 ### Systems & Graphics
 ![SDL2](https://img.shields.io/badge/SDL2-1C2C3E?style=flat-square)
@@ -116,14 +160,13 @@ An embedded payment terminal prototype for emerging market merchants, built as a
 ### Frontend & 3D
 ![Three.js](https://img.shields.io/badge/Three.js-000000?style=flat-square&logo=threedotjs&logoColor=white)
 ![HTML](https://img.shields.io/badge/HTML5-E34F26?style=flat-square&logo=html5&logoColor=white)
-![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=flat-square&logo=javascript&logoColor=black)
 
 ### Backend & Testing
 ![Flask](https://img.shields.io/badge/Flask-000000?style=flat-square&logo=flask&logoColor=white)
+![Express](https://img.shields.io/badge/Express-000000?style=flat-square&logo=express&logoColor=white)
+![Jest](https://img.shields.io/badge/Jest-C21325?style=flat-square&logo=jest&logoColor=white)
 ![pytest](https://img.shields.io/badge/pytest-0A9EDC?style=flat-square&logo=pytest&logoColor=white)
 ![Selenium](https://img.shields.io/badge/Selenium-43B02A?style=flat-square&logo=selenium&logoColor=white)
-![Node.js](https://img.shields.io/badge/Node.js-339933?style=flat-square&logo=nodedotjs&logoColor=white)
-![Express](https://img.shields.io/badge/Express-000000?style=flat-square&logo=express&logoColor=white)
 
 ### Hardware
 ![Arduino](https://img.shields.io/badge/Arduino-00878F?style=flat-square&logo=arduino&logoColor=white)
@@ -147,12 +190,13 @@ An embedded payment terminal prototype for emerging market merchants, built as a
 
 | Project | Description | Stack | Status |
 |---|---|---|---|
+| **HarvestIQ** | USSD postharvest intelligence platform for Nigerian farmers | Node.js, AWS, Africa's Talking | ✅ Live & Deployed |
 | **AeroForge** | Browser-based aircraft aerodynamics simulator with C+WASM physics engine | C, WebAssembly, Three.js | 🚧 In Progress |
 | **SensorSentinel** | AI-powered agentic testing platform for IoT device management | C, Python, Flask, UiPath | ✅ Complete |
 | **ChainEngineers Midnight** | Confidential embedded payment terminal on Midnight Network | C, SDL2, ZK Proofs | ✅ Complete |
 | **ChainEngineers** | Solana-based embedded payment terminal | C, SDL2, Solana | ✅ Complete |
 | **Flappy Puppy** | SDL2 2D game — physics, sprites, animation, audio and scoring | C, SDL2, SDL2_mixer | 🚧 In Progress |
-| **Smart Patient Monitoring System** | IoT health monitor with biometric & environmental sensors | ESP32, C | 🚧 In Progress |
+| **Smart Patient Monitoring System** | IoT health monitor with biometric and environmental sensors | ESP32, C | 🚧 In Progress |
 | **14 C Project Challenge** | Mastering C and systems programming through project-based learning | C | 🚧 In Progress |
 
 ---
@@ -174,6 +218,8 @@ An embedded payment terminal prototype for emerging market merchants, built as a
 - 🐙 **GitHub:** [github.com/alfredoeinsteino2024](https://github.com/alfredoeinsteino2024)
 - 💼 **LinkedIn:** [linkedin.com/in/toluwanimialfred](https://www.linkedin.com/in/toluwanimialfred/)
 - 🐦 **X:** [x.com/AlfredFadipe](https://x.com/AlfredFadipe)
+- 🌾 **HarvestIQ:** [alfredoeinsteino2024.github.io/harvestiq](https://alfredoeinsteino2024.github.io/harvestiq)
+- 📧 **Email:** harvestiqng@gmail.com
 
 ---
 
