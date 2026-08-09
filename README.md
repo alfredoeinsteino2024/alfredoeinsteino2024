@@ -2,7 +2,7 @@
 
 # 👋 Hi, I'm Toluwanimi Alfred (@alfredoeinsteino2024)
 
-**Embedded Systems Engineer | C Programmer | Simulation Software Developer | AgriTech Founder**
+**Mechatronics Engineering Student | C Programmer | Aspiring Firmware Engineer | Systems Builder**
 
 [![GitHub](https://img.shields.io/badge/GitHub-alfredoeinsteino2024-181717?style=flat-square&logo=github)](https://github.com/alfredoeinsteino2024)
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-toluwanimialfred-0A66C2?style=flat-square&logo=linkedin)](https://www.linkedin.com/in/toluwanimialfred/)
