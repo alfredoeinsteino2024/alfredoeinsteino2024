@@ -19,6 +19,7 @@
 - 🔧 Embedded Systems and C Programmer, aspiring **Game Engine Developer**
 - 🎓 Mechatronics undergraduate focused on **IoT**, **embedded systems**, and **agentic software testing**
 - ✈️ Building **AeroForge** — a browser-based aircraft aerodynamics simulator with a C physics engine compiled to WebAssembly
+- 🚕 Built **FJAY Dispatch** — a USSD-based campus transport/dispatch system (final year project, built for a client — private repo)
 - 🛡️ Building **AI-powered testing platforms** that validate IoT device management systems
 - 💳 Building **confidential payment systems** using C and embedded hardware
 - 🖥️ Developing **SDL2 applications**, system-level projects, and hardware integrations
@@ -55,7 +56,24 @@ Nigerian farmers lose **40% of their harvest** worth **₦5 trillion annually** 
 
 ---
 
-## ✈️ Latest Project: AeroForge
+## 🚨 Latest Project: RescueHacks Alert
+
+> **Built for RescueHacks 2026 — Discreet USSD Emergency Alert System**
+
+A USSD code that looks exactly like checking an airtime balance — but silently triggers a real-time emergency alert the moment it's dialed. No menu, no confirmation screen, no visible evidence on the phone.
+
+- 📵 **No interactive menu** — emergency type is encoded directly in the dialed digits, so the response is instant with no screens shown
+- 🕶️ **Deliberately neutral response** — every dial returns an identical, boring cover message, whether or not an alert was triggered
+- 💬 **Silent WhatsApp alert** — sends emergency type, caller's number, and timestamp to a trusted contact via Meta's WhatsApp Cloud API
+- ☁️ **Serverless on AWS** — Lambda, API Gateway, SSM Parameter Store, deployed via AWS SAM
+- 📡 **Africa's Talking USSD gateway** for the discreet dial-code trigger
+- 🔭 **Long-term vision:** routing alerts to registered security operatives, with telecom partnership for lawful location assistance
+
+[![Repo](https://img.shields.io/badge/Repo-GitHub-181717?style=flat-square&logo=github)](https://github.com/alfredoeinsteino2024/rescuehacks-alert)
+
+---
+
+## ✈️ Project: AeroForge
 
 > **Browser-based Aircraft Aerodynamics Simulator**
 
@@ -191,12 +209,12 @@ An embedded payment terminal prototype for emerging market merchants, built as a
 | Project | Description | Stack | Status |
 |---|---|---|---|
 | **HarvestIQ** | USSD postharvest intelligence platform for Nigerian farmers | Node.js, AWS, Africa's Talking | ✅ Live & Deployed |
+| **RescueHacks Alert** | Discreet USSD emergency alert system | AWS Lambda, Africa's Talking, WhatsApp Cloud API | ✅ Complete |
 | **AeroForge** | Browser-based aircraft aerodynamics simulator with C+WASM physics engine | C, WebAssembly, Three.js | 🚧 In Progress |
+| **FJAY Dispatch** | USSD-based campus transport/dispatch system (client project) | Node.js, AWS, Africa's Talking | ✅ Complete — Private Repo |
 | **SensorSentinel** | AI-powered agentic testing platform for IoT device management | C, Python, Flask, UiPath | ✅ Complete |
 | **ChainEngineers Midnight** | Confidential embedded payment terminal on Midnight Network | C, SDL2, ZK Proofs | ✅ Complete |
 | **ChainEngineers** | Solana-based embedded payment terminal | C, SDL2, Solana | ✅ Complete |
-| **Flappy Puppy** | SDL2 2D game — physics, sprites, animation, audio and scoring | C, SDL2, SDL2_mixer | 🚧 In Progress |
-| **Smart Patient Monitoring System** | IoT health monitor with biometric and environmental sensors | ESP32, C | 🚧 In Progress |
 | **14 C Project Challenge** | Mastering C and systems programming through project-based learning | C | 🚧 In Progress |
 
 ---
