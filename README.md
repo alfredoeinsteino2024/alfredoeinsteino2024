@@ -1,6 +1,4 @@
 
-
-Profile readme · MD
 <div align="center">
 # 👋 Hi, I'm Toluwanimi Alfred (@alfredoeinsteino2024)
  
