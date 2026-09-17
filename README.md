@@ -1,4 +1,6 @@
 
+
+Profile readme · MD
 <div align="center">
 # 👋 Hi, I'm Toluwanimi Alfred (@alfredoeinsteino2024)
  
@@ -25,6 +27,22 @@
 - ⚡ Working with **microcontrollers**, real-time systems, and decentralized payment concepts
 - 🤖 Using **Claude Code** as my primary AI-assisted development tool across all projects
 - 📈 Continuously building and improving through hands-on engineering work
+---
+ 
+## 🚁 Latest Project: Drone Companion Controller
+ 
+> **Arduino Mega 2560 Companion Controller for Automated Payload Release and Safety Monitoring**
+ 
+An embedded companion controller for a drone payload system, combining real-time power monitoring, obstacle-triggered alerts, and precise servo-driven release timing — fully validated in Proteus VSM before hardware bring-up.
+ 
+- 🔋 **I2C current monitoring** via an INA219 sensor (SDA pin 20, SCL pin 21) for real-time power draw tracking
+- 📡 **HC-SR04 ultrasonic sensing** triggers a dual-tone (1000Hz/2000Hz) emergency siren pattern using tone()/noTone()
+- 🎯 **PWM servo control** for automated payload release
+- 🧪 **Fully simulated in Proteus VSM** before physical build — complete schematic capture included
+**Tech Stack:** C++ (Arduino Mega 2560) · I2C/TWI · INA219 · HC-SR04 · PWM Servo Control · Proteus VSM
+ 
+[![Repo](https://img.shields.io/badge/Repo-GitHub-181717?style=flat-square&logo=github)](https://github.com/alfredoeinsteino2024/drone-companion-controller)
+ 
 ---
  
 ## 🛰️ Latest Project: ESP32 Radar Scanner
@@ -201,6 +219,7 @@ An embedded payment terminal prototype for emerging market merchants, built as a
 ![ESP32](https://img.shields.io/badge/ESP32-E7352C?style=flat-square)
 ![ESP8266](https://img.shields.io/badge/ESP8266-E7352C?style=flat-square)
 ![HC-SR04](https://img.shields.io/badge/HC--SR04%20Ultrasonic%20Sensor-007ACC?style=flat-square)
+![INA219](https://img.shields.io/badge/INA219%20Current%20Sensor-00758F?style=flat-square)
 ![MAX30105](https://img.shields.io/badge/MAX30105%20Heart%20Rate%20Sensor-FF4444?style=flat-square)
 ![DS18B20](https://img.shields.io/badge/DS18B20%20Temp%20Sensor-FF8800?style=flat-square)
  
@@ -219,6 +238,7 @@ An embedded payment terminal prototype for emerging market merchants, built as a
  
 | Project | Description | Stack | Status |
 |---|---|---|---|
+| **Drone Companion Controller** | Arduino Mega 2560 companion controller for automated payload release, with I2C power monitoring and ultrasonic safety alerts | C++, Arduino Mega 2560, I2C | ✅ Complete |
 | **ESP32 Radar Scanner** | Search-and-track ultrasonic radar with anti-decoy dwell logic and a live dashboard | C++, ESP32, Node.js | ✅ Complete |
 | **HarvestIQ** | USSD postharvest intelligence platform for Nigerian farmers | Node.js, AWS, Africa's Talking | ✅ Live & Deployed |
 | **RescueHacks Alert** | Discreet USSD emergency alert system | AWS Lambda, Africa's Talking, WhatsApp Cloud API | ✅ Complete |
