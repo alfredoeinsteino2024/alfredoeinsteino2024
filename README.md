@@ -25,7 +25,7 @@ Profile readme · MD
 - 💳 Building **confidential payment systems** using C and embedded hardware
 - 🖥️ Developing **SDL2 applications**, system-level projects, and hardware integrations
 - ⚡ Working with **microcontrollers**, real-time systems, and decentralized payment concepts
-- 🤖 Using **Claude Code** as my primary AI-assisted development tool across all projects
+- 🤖 Using **Claude** as my primary AI-assisted development tool across all projects
 - 📈 Continuously building and improving through hands-on engineering work
 ---
  
