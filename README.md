@@ -1,6 +1,3 @@
-
-
-Profile readme · MD
 <div align="center">
 # 👋 Hi, I'm Toluwanimi Alfred (@alfredoeinsteino2024)
  
@@ -19,7 +16,8 @@ Profile readme · MD
 - 🌾 Founder & sole builder of **HarvestIQ** — a live, deployed USSD agritech platform serving Nigerian smallholder farmers
 - 🔧 Embedded Systems and C Programmer, aspiring **Game Engine Developer**
 - 🎓 Mechatronics undergraduate focused on **IoT**, **embedded systems**, and **agentic software testing**
-- ✈️ Building **AeroForge** — a browser-based aircraft aerodynamics simulator with a C physics engine compiled to WebAssembly
+- 🛩️ Building **Embedded Flight Controller** — an ESP32 single-axis flight stabilization controller, built from a simulated sensor up through PID control
+- ✈️ Building **AeroForge** — a browser-based aircraft aerodynamics simulator with a C physics engine compiled to WebAssembly *(currently paused)*
 - 🚕 Built **FJAY Dispatch** — a USSD-based campus transport/dispatch system (final year project, built for a client — private repo)
 - 🛡️ Building **AI-powered testing platforms** that validate IoT device management systems
 - 💳 Building **confidential payment systems** using C and embedded hardware
@@ -28,8 +26,25 @@ Profile readme · MD
 - 🤖 Using **Claude** as my primary AI-assisted development tool across all projects
 - 📈 Continuously building and improving through hands-on engineering work
 ---
+
+## 🛩️ Latest Project: Embedded Flight Controller
+
+> **ESP32 Single-Axis Flight Controller — Sensor Simulation, PID Control, and Embedded Firmware Architecture**
+
+A hands-on learning project to understand how embedded flight-control systems are structured: how a feedback loop turns sensor error into an actuator command. Development starts against a simulated sensor so the control architecture and algorithms can be built and tested before any real hardware is connected.
+
+- 🧭 **Simulated sensor input** — a standalone `SensorSim` module generates a time-based angle signal, decoupling control-logic development from physical hardware
+- 🔁 **Classic feedback-loop architecture** — measure → compare against setpoint → compute error → (next: PID) → actuate → feedback
+- 🧱 **Modular firmware structure** — `Config`, `SensorSim`, and the main control loop kept as separate, single-purpose files from the start
+- 🚧 **In progress:** PID controller and actuator output are the next pieces going in, once the sensor simulation timing is solid
+
+**Tech Stack:** C++ (Arduino/ESP32) · PlatformIO
+
+[![Repo](https://img.shields.io/badge/Repo-GitHub-181717?style=flat-square&logo=github)](https://github.com/alfredoeinsteino2024/embedded-flight-controller)
+
+---
  
-## 🚁 Latest Project: Drone Companion Controller
+## 🚁 Project: Drone Companion Controller
  
 > **Arduino Mega 2560 Companion Controller for Automated Payload Release and Safety Monitoring**
  
@@ -45,7 +60,7 @@ An embedded companion controller for a drone payload system, combining real-time
  
 ---
  
-## 🛰️ Latest Project: ESP32 Radar Scanner
+## 🛰️ Project: ESP32 Radar Scanner
  
 > **A Search-and-Track Ultrasonic Radar System, Modeled on Real Fire-Control Radar Behavior**
  
@@ -105,11 +120,11 @@ A USSD code that looks exactly like checking an airtime balance — but silently
  
 ---
  
-## ✈️ Project: AeroForge
+## ✈️ Project: AeroForge *(Paused)*
  
 > **Browser-based Aircraft Aerodynamics Simulator**
  
-A real-time wing aerodynamics simulator running entirely in the browser, powered by a C physics engine compiled to WebAssembly. Students can design any wing shape and instantly see the aerodynamic consequences.
+A real-time wing aerodynamics simulator running entirely in the browser, powered by a C physics engine compiled to WebAssembly. Students can design any wing shape and instantly see the aerodynamic consequences. Currently paused while focus shifts to other projects.
  
 - ⚙️ **C physics engine** implementing the Vortex Lattice Method (VLM) with Biot-Savart horseshoe vortex computation
 - 🔬 **Gaussian elimination solver** computing lift distribution across arbitrary wing geometries
@@ -238,11 +253,12 @@ An embedded payment terminal prototype for emerging market merchants, built as a
  
 | Project | Description | Stack | Status |
 |---|---|---|---|
+| **Embedded Flight Controller** | ESP32 single-axis flight controller — sensor simulation and PID control architecture | C++, Arduino/ESP32 | 🚧 In Progress |
 | **Drone Companion Controller** | Arduino Mega 2560 companion controller for automated payload release, with I2C power monitoring and ultrasonic safety alerts | C++, Arduino Mega 2560, I2C | ✅ Complete |
 | **ESP32 Radar Scanner** | Search-and-track ultrasonic radar with anti-decoy dwell logic and a live dashboard | C++, ESP32, Node.js | ✅ Complete |
 | **HarvestIQ** | USSD postharvest intelligence platform for Nigerian farmers | Node.js, AWS, Africa's Talking | ✅ Live & Deployed |
 | **RescueHacks Alert** | Discreet USSD emergency alert system | AWS Lambda, Africa's Talking, WhatsApp Cloud API | ✅ Complete |
-| **AeroForge** | Browser-based aircraft aerodynamics simulator with C+WASM physics engine | C, WebAssembly, Three.js | 🚧 In Progress |
+| **AeroForge** | Browser-based aircraft aerodynamics simulator with C+WASM physics engine | C, WebAssembly, Three.js | ⏸️ Paused |
 | **FJAY Dispatch** | USSD-based campus transport/dispatch system (client project) | Node.js, AWS, Africa's Talking | ✅ Complete — Private Repo |
 | **SensorSentinel** | AI-powered agentic testing platform for IoT device management | C, Python, Flask, UiPath | ✅ Complete |
 | **ChainEngineers Midnight** | Confidential embedded payment terminal on Midnight Network | C, SDL2, ZK Proofs | ✅ Complete |
@@ -274,4 +290,3 @@ An embedded payment terminal prototype for emerging market merchants, built as a
 *"Learning by doing — through continuous system building."*
  
 </div>
- 
