@@ -9,6 +9,7 @@
 [![HarvestIQ](https://img.shields.io/badge/HarvestIQ-Live%20Product-4CAF50?style=flat-square)](https://alfredoeinsteino2024.github.io/harvestiq)
  
 </div>
+
 ---
  
 ## 🚀 About Me
@@ -20,11 +21,35 @@
 - ✈️ Building **AeroForge** — a browser-based aircraft aerodynamics simulator with a C physics engine compiled to WebAssembly *(currently paused)*
 - 🚕 Built **FJAY Dispatch** — a USSD-based campus transport/dispatch system (final year project, built for a client — private repo)
 - 🛡️ Building **AI-powered testing platforms** that validate IoT device management systems
+- 🔐 Building **SecurityMonitor** — a Windows PowerShell security tool that detects failed logins, triggers webcam recording, and sends real-time email alerts *(in progress)*
 - 💳 Building **confidential payment systems** using C and embedded hardware
 - 🖥️ Developing **SDL2 applications**, system-level projects, and hardware integrations
 - ⚡ Working with **microcontrollers**, real-time systems, and decentralized payment concepts
 - 🤖 Using **Claude** as my primary AI-assisted development tool across all projects
 - 📈 Continuously building and improving through hands-on engineering work
+
+---
+
+## 🔐 Active Project: SecurityMonitor-PowerShell
+
+> **Windows Security Monitoring Tool — Failed Login Detection, Webcam Recording, and Email Alerts**
+
+A PowerShell-based security monitoring tool that watches the Windows Security Event Log in real time and automatically responds to unauthorized login attempts — no third-party software required.
+
+- 🔍 **Event Log monitoring** — polls Windows Security Event ID 4625 (failed login) using a sliding 30-second detection window to avoid false accumulation
+- 📸 **Automatic webcam recording** — triggers FFmpeg DirectShow capture after a configurable threshold of failed attempts, saving timestamped footage to disk
+- 📧 **Dual email alerts** — sends instant Gmail SMTP alerts to two configured addresses the moment the threshold is hit
+- 🛑 **Hotkey stop support** — Win32 `RegisterHotKey` via embedded C# inside PowerShell for Ctrl+Alt+S to stop active recording
+- 📋 **Full activity logging** — every event, alert, and FFmpeg process state is written to a timestamped log file
+- 🔁 **Duplicate trigger protection** — one alert and one recording per incident, resets cleanly after each stop
+- 🐛 **FFmpeg crash detection** — detects and logs silent FFmpeg failures with exit codes and stderr output
+
+**Tech Stack:** PowerShell · Windows Event Log · FFmpeg · DirectShow · Gmail SMTP · Win32 API · C# (embedded)
+
+[![Repo](https://img.shields.io/badge/Repo-GitHub-181717?style=flat-square&logo=github)](https://github.com/alfredoeinsteino2024/SecurityMonitor-PowerShell)
+
+> 🚧 Active development — recording trigger, hotkey system, and Task Scheduler auto-start in progress
+
 ---
 
 ## 🛩️ Latest Project: Embedded Flight Controller
@@ -54,6 +79,7 @@ An embedded companion controller for a drone payload system, combining real-time
 - 📡 **HC-SR04 ultrasonic sensing** triggers a dual-tone (1000Hz/2000Hz) emergency siren pattern using tone()/noTone()
 - 🎯 **PWM servo control** for automated payload release
 - 🧪 **Fully simulated in Proteus VSM** before physical build — complete schematic capture included
+
 **Tech Stack:** C++ (Arduino Mega 2560) · I2C/TWI · INA219 · HC-SR04 · PWM Servo Control · Proteus VSM
  
 [![Repo](https://img.shields.io/badge/Repo-GitHub-181717?style=flat-square&logo=github)](https://github.com/alfredoeinsteino2024/drone-companion-controller)
@@ -72,6 +98,7 @@ A tracking radar built on an ESP32 that behaves like the real thing: it searches
 - 🛡️ Anti-decoy design — the sweep always completes its pass, so it can't be permanently pinned on one bearing
 - 📡 Live WiFi telemetry via HTTP POST, JSON payloads, to a Node backend
 - 🖥️ Real-time web dashboard visualizing scan data as it streams in
+
 **Tech Stack:** C++ (Arduino/ESP32) · ESP32Servo · ArduinoJson · HC-SR04 · SG90 Servo · Node.js · HTML/CSS/JS
  
 [![Repo](https://img.shields.io/badge/Repo-GitHub-181717?style=flat-square&logo=github)](https://github.com/alfredoeinsteino2024/esp32-radar-scanner)
@@ -93,6 +120,7 @@ Nigerian farmers lose **40% of their harvest** worth **₦5 trillion annually** 
 - 📲 **SMS price pipeline** — whitelisted market agents submit daily prices via SMS keyword commands
 - ☁️ **Fully serverless** — AWS Lambda, DynamoDB, API Gateway, SNS, EventBridge, Bedrock — all deployed
 - ✅ **15/15 unit tests passing**
+
 **Tech Stack:** Node.js · AWS Lambda · DynamoDB · API Gateway · AWS Bedrock · SNS · EventBridge · Africa's Talking · AWS SAM · GitHub Pages
  
 [![Website](https://img.shields.io/badge/Website-Live-4CAF50?style=flat-square)](https://alfredoeinsteino2024.github.io/harvestiq)
@@ -116,6 +144,7 @@ A USSD code that looks exactly like checking an airtime balance — but silently
 - ☁️ **Serverless on AWS** — Lambda, API Gateway, SSM Parameter Store, deployed via AWS SAM
 - 📡 **Africa's Talking USSD gateway** for the discreet dial-code trigger
 - 🔭 **Long-term vision:** routing alerts to registered security operatives, with telecom partnership for lawful location assistance
+
 [![Repo](https://img.shields.io/badge/Repo-GitHub-181717?style=flat-square&logo=github)](https://github.com/alfredoeinsteino2024/rescuehacks-alert)
  
 ---
@@ -134,6 +163,7 @@ A real-time wing aerodynamics simulator running entirely in the browser, powered
 - ⚠️ **Stall warning system** — wing flashes red when angle of attack exceeds critical threshold
 - 📊 **Live CL, CD, L/D ratio, pitch moment, and lift force** — all computed from real aerodynamic equations
 - 🎛️ Parametric controls: wingspan, chord, taper, sweep angle, dihedral, angle of attack, airspeed
+
 [![Repo](https://img.shields.io/badge/Repo-GitHub-181717?style=flat-square&logo=github)](https://github.com/alfredoeinsteino2024/aeroforge)
  
 ---
@@ -151,6 +181,7 @@ An AI-powered agentic testing platform that validates IoT device management syst
 - ✅ **95/95 test cases passing** across API correctness, UI behavior, and anomaly detection accuracy
 - 🔁 **UiPath Test Cloud** as the orchestration and governance layer tying all agents together
 - 🧠 Built end-to-end with **Claude Code** — architecture, C simulator, Flask API, dashboard, and all 95 test cases
+
 [![Repo](https://img.shields.io/badge/Repo-GitHub-181717?style=flat-square&logo=github)](https://github.com/alfredoeinsteino2024/SensorSentinel)
  
 ---
@@ -168,6 +199,7 @@ A privacy-focused embedded payment terminal designed for small merchants in Nige
 - 📜 Compact **smart contract logic** implementing payment circuits
 - 🧵 Multithreaded system using **SDL threads and mutex synchronization**
 - 💱 Currency conversion between **Nigerian Naira and DUST token**
+
 [![Demo](https://img.shields.io/badge/Demo-Facebook-1877F2?style=flat-square&logo=facebook)](https://www.facebook.com/share/v/1BV5oQZhwY/)
 [![Repo](https://img.shields.io/badge/Repo-GitHub-181717?style=flat-square&logo=github)](https://github.com/alfredoeinsteino2024/chainengineers-midnight)
  
@@ -184,6 +216,7 @@ An embedded payment terminal prototype for emerging market merchants, built as a
 - 📱 Real-time **Solana Pay QR code generation**
 - ✅ Live **transaction confirmation** on Solana Devnet
 - 🧵 Multithreaded architecture using **SDL threading and mutexes**
+
 [![Demo](https://img.shields.io/badge/Demo-Loom-625DF5?style=flat-square&logo=loom)](https://www.loom.com/share/e6a757cfbf9748fab841fae9ae3bcf45)
 [![Repo](https://img.shields.io/badge/Repo-GitHub-181717?style=flat-square&logo=github)](https://github.com/alfredoeinsteino2024/chainengineers)
  
@@ -197,6 +230,7 @@ An embedded payment terminal prototype for emerging market merchants, built as a
 ![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=flat-square&logo=javascript&logoColor=black)
 ![Node.js](https://img.shields.io/badge/Node.js-339933?style=flat-square&logo=nodedotjs&logoColor=white)
 ![Python](https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white)
+![PowerShell](https://img.shields.io/badge/PowerShell-5391FE?style=flat-square&logo=powershell&logoColor=white)
  
 ### Cloud & Serverless
 ![AWS Lambda](https://img.shields.io/badge/AWS%20Lambda-FF9900?style=flat-square&logo=awslambda&logoColor=white)
@@ -217,6 +251,8 @@ An embedded payment terminal prototype for emerging market merchants, built as a
 ![WebAssembly](https://img.shields.io/badge/WebAssembly-654FF0?style=flat-square&logo=webassembly&logoColor=white)
 ![Emscripten](https://img.shields.io/badge/Emscripten-000000?style=flat-square)
 ![Multithreading](https://img.shields.io/badge/Multithreaded%20Programming-555555?style=flat-square)
+![FFmpeg](https://img.shields.io/badge/FFmpeg-007808?style=flat-square&logo=ffmpeg&logoColor=white)
+![Win32 API](https://img.shields.io/badge/Win32%20API-0078D4?style=flat-square&logo=windows&logoColor=white)
  
 ### Frontend & 3D
 ![Three.js](https://img.shields.io/badge/Three.js-000000?style=flat-square&logo=threedotjs&logoColor=white)
@@ -241,6 +277,11 @@ An embedded payment terminal prototype for emerging market merchants, built as a
 ### Agentic Testing & Orchestration
 ![UiPath](https://img.shields.io/badge/UiPath%20Test%20Cloud-FA4616?style=flat-square&logo=uipath&logoColor=white)
 ![Claude Code](https://img.shields.io/badge/Claude%20Code-D97757?style=flat-square)
+
+### Security & Monitoring
+![Windows Event Log](https://img.shields.io/badge/Windows%20Event%20Log-0078D4?style=flat-square&logo=windows&logoColor=white)
+![DirectShow](https://img.shields.io/badge/DirectShow-0078D4?style=flat-square&logo=windows&logoColor=white)
+![Gmail SMTP](https://img.shields.io/badge/Gmail%20SMTP-EA4335?style=flat-square&logo=gmail&logoColor=white)
  
 ### Blockchain
 ![Midnight Network](https://img.shields.io/badge/Midnight%20Network-0D0D0D?style=flat-square)
@@ -253,6 +294,7 @@ An embedded payment terminal prototype for emerging market merchants, built as a
  
 | Project | Description | Stack | Status |
 |---|---|---|---|
+| **SecurityMonitor-PowerShell** | Windows security tool — failed login detection, webcam recording, email alerts | PowerShell, FFmpeg, Win32 API, Gmail SMTP | 🚧 In Progress |
 | **Embedded Flight Controller** | ESP32 single-axis flight controller — sensor simulation and PID control architecture | C++, Arduino/ESP32 | 🚧 In Progress |
 | **Drone Companion Controller** | Arduino Mega 2560 companion controller for automated payload release, with I2C power monitoring and ultrasonic safety alerts | C++, Arduino Mega 2560, I2C | ✅ Complete |
 | **ESP32 Radar Scanner** | Search-and-track ultrasonic radar with anti-decoy dwell logic and a live dashboard | C++, ESP32, Node.js | ✅ Complete |
@@ -270,11 +312,13 @@ An embedded payment terminal prototype for emerging market merchants, built as a
 ## 📊 GitHub Stats
  
 <div align="center">
+
 ![GitHub Stats](https://github-readme-stats.vercel.app/api?username=alfredoeinsteino2024&show_icons=true&theme=dark&hide_border=true&bg_color=0d1117)
  
 ![Top Languages](https://github-readme-stats.vercel.app/api/top-langs/?username=alfredoeinsteino2024&layout=compact&theme=dark&hide_border=true&bg_color=0d1117)
  
 </div>
+
 ---
  
 ## 📫 Contact
@@ -284,9 +328,11 @@ An embedded payment terminal prototype for emerging market merchants, built as a
 - 🐦 **X:** [x.com/AlfredFadipe](https://x.com/AlfredFadipe)
 - 🌾 **HarvestIQ:** [alfredoeinsteino2024.github.io/harvestiq](https://alfredoeinsteino2024.github.io/harvestiq)
 - 📧 **Email:** harvestiqng@gmail.com
+
 ---
  
 <div align="center">
+
 *"Learning by doing — through continuous system building."*
  
 </div>
