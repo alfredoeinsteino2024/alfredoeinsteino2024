@@ -1,338 +1,138 @@
 <div align="center">
-# 👋 Hi, I'm Toluwanimi Alfred (@alfredoeinsteino2024)
- 
-**Mechatronics Engineering Student | C Programmer | Aspiring Firmware Engineer | Systems Builder**
- 
+
+# 👋 Hi, I'm Toluwanimi Alfred
+
+**Mechatronics Engineering Undergraduate | Embedded Systems & C | Aspiring Firmware Engineer**
+
+🎓 Federal University of Technology, Minna (FUT Minna), Nigeria
+
+🌍 *Open to international internships, on-site or remote*
+
 [![GitHub](https://img.shields.io/badge/GitHub-alfredoeinsteino2024-181717?style=flat-square&logo=github)](https://github.com/alfredoeinsteino2024)
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-toluwanimialfred-0A66C2?style=flat-square&logo=linkedin)](https://www.linkedin.com/in/toluwanimialfred/)
 [![X](https://img.shields.io/badge/X-AlfredFadipe-000000?style=flat-square&logo=x)](https://x.com/AlfredFadipe)
 [![HarvestIQ](https://img.shields.io/badge/HarvestIQ-Live%20Product-4CAF50?style=flat-square)](https://alfredoeinsteino2024.github.io/harvestiq)
- 
+[![Email](https://img.shields.io/badge/Email-harvestiqng@gmail.com-EA4335?style=flat-square&logo=gmail&logoColor=white)](mailto:alfredfadipe09@gmail.com)
+
 </div>
 
 ---
- 
+
 ## 🚀 About Me
- 
-- 🌾 Founder & sole builder of **HarvestIQ** — a live, deployed USSD agritech platform serving Nigerian smallholder farmers
-- 🔧 Embedded Systems and C Programmer, aspiring **Game Engine Developer**
-- 🎓 Mechatronics undergraduate focused on **IoT**, **embedded systems**, and **agentic software testing**
-- 🛩️ Building **Embedded Flight Controller** — an ESP32 single-axis flight stabilization controller, built from a simulated sensor up through PID control
-- ✈️ Building **AeroForge** — a browser-based aircraft aerodynamics simulator with a C physics engine compiled to WebAssembly *(currently paused)*
-- 🚕 Built **FJAY Dispatch** — a USSD-based campus transport/dispatch system (final year project, built for a client — private repo)
-- 🛡️ Building **AI-powered testing platforms** that validate IoT device management systems
-- 🔐 Building **SecurityMonitor** — a Windows PowerShell security tool that detects failed logins, triggers webcam recording, and sends real-time email alerts *(in progress)*
-- 💳 Building **confidential payment systems** using C and embedded hardware
-- 🖥️ Developing **SDL2 applications**, system-level projects, and hardware integrations
-- ⚡ Working with **microcontrollers**, real-time systems, and decentralized payment concepts
-- 🤖 Using **Claude** as my primary AI-assisted development tool across all projects
-- 📈 Continuously building and improving through hands-on engineering work
+
+Mechatronics Engineering undergraduate building embedded systems, IoT, and USSD-based software in C, C++, and Node.js. Aiming at firmware engineering. For fun, I also explore game engine programming as a way to learn low-level C.
 
 ---
 
-## 🔐 Active Project: SecurityMonitor-PowerShell
+## 🌾 Featured: HarvestIQ
 
-> **Windows Security Monitoring Tool — Failed Login Detection, Webcam Recording, and Email Alerts**
-
-A PowerShell-based security monitoring tool that watches the Windows Security Event Log in real time and automatically responds to unauthorized login attempts — no third-party software required.
-
-- 🔍 **Event Log monitoring** — polls Windows Security Event ID 4625 (failed login) using a sliding 30-second detection window to avoid false accumulation
-- 📸 **Automatic webcam recording** — triggers FFmpeg DirectShow capture after a configurable threshold of failed attempts, saving timestamped footage to disk
-- 📧 **Dual email alerts** — sends instant Gmail SMTP alerts to two configured addresses the moment the threshold is hit
-- 🛑 **Hotkey stop support** — Win32 `RegisterHotKey` via embedded C# inside PowerShell for Ctrl+Alt+S to stop active recording
-- 📋 **Full activity logging** — every event, alert, and FFmpeg process state is written to a timestamped log file
-- 🔁 **Duplicate trigger protection** — one alert and one recording per incident, resets cleanly after each stop
-- 🐛 **FFmpeg crash detection** — detects and logs silent FFmpeg failures with exit codes and stderr output
-
-**Tech Stack:** PowerShell · Windows Event Log · FFmpeg · DirectShow · Gmail SMTP · Win32 API · C# (embedded)
-
-[![Repo](https://img.shields.io/badge/Repo-GitHub-181717?style=flat-square&logo=github)](https://github.com/alfredoeinsteino2024/SecurityMonitor-PowerShell)
-
-> 🚧 Active development — recording trigger, hotkey system, and Task Scheduler auto-start in progress
-
----
-
-## 🛩️ Latest Project: Embedded Flight Controller
-
-> **ESP32 Single-Axis Flight Controller — Sensor Simulation, PID Control, and Embedded Firmware Architecture**
-
-A hands-on learning project to understand how embedded flight-control systems are structured: how a feedback loop turns sensor error into an actuator command. Development starts against a simulated sensor so the control architecture and algorithms can be built and tested before any real hardware is connected.
-
-- 🧭 **Simulated sensor input** — a standalone `SensorSim` module generates a time-based angle signal, decoupling control-logic development from physical hardware
-- 🔁 **Classic feedback-loop architecture** — measure → compare against setpoint → compute error → (next: PID) → actuate → feedback
-- 🧱 **Modular firmware structure** — `Config`, `SensorSim`, and the main control loop kept as separate, single-purpose files from the start
-- 🚧 **In progress:** PID controller and actuator output are the next pieces going in, once the sensor simulation timing is solid
-
-**Tech Stack:** C++ (Arduino/ESP32) · PlatformIO
-
-[![Repo](https://img.shields.io/badge/Repo-GitHub-181717?style=flat-square&logo=github)](https://github.com/alfredoeinsteino2024/embedded-flight-controller)
-
----
- 
-## 🚁 Project: Drone Companion Controller
- 
-> **Arduino Mega 2560 Companion Controller for Automated Payload Release and Safety Monitoring**
- 
-An embedded companion controller for a drone payload system, combining real-time power monitoring, obstacle-triggered alerts, and precise servo-driven release timing — fully validated in Proteus VSM before hardware bring-up.
- 
-- 🔋 **I2C current monitoring** via an INA219 sensor (SDA pin 20, SCL pin 21) for real-time power draw tracking
-- 📡 **HC-SR04 ultrasonic sensing** triggers a dual-tone (1000Hz/2000Hz) emergency siren pattern using tone()/noTone()
-- 🎯 **PWM servo control** for automated payload release
-- 🧪 **Fully simulated in Proteus VSM** before physical build — complete schematic capture included
-
-**Tech Stack:** C++ (Arduino Mega 2560) · I2C/TWI · INA219 · HC-SR04 · PWM Servo Control · Proteus VSM
- 
-[![Repo](https://img.shields.io/badge/Repo-GitHub-181717?style=flat-square&logo=github)](https://github.com/alfredoeinsteino2024/drone-companion-controller)
- 
----
- 
-## 🛰️ Project: ESP32 Radar Scanner
- 
-> **A Search-and-Track Ultrasonic Radar System, Modeled on Real Fire-Control Radar Behavior**
- 
-A tracking radar built on an ESP32 that behaves like the real thing: it searches at full sweep speed, locks onto anything in range, dwells to confirm and track it, then deliberately resumes the sweep — engineered so a static decoy can never pin it on one bearing while something else moves through an unwatched angle.
- 
-- 🔄 Continuous 0°–180° servo sweep with real-time angular zone classification (A–D)
-- 🎯 Automatic search → track → resume state machine, modeled on fire-control radar dwell behavior
-- 🔊 Distance-proportional buzzer escalation — beep rate accelerates as objects close in
-- 🛡️ Anti-decoy design — the sweep always completes its pass, so it can't be permanently pinned on one bearing
-- 📡 Live WiFi telemetry via HTTP POST, JSON payloads, to a Node backend
-- 🖥️ Real-time web dashboard visualizing scan data as it streams in
-
-**Tech Stack:** C++ (Arduino/ESP32) · ESP32Servo · ArduinoJson · HC-SR04 · SG90 Servo · Node.js · HTML/CSS/JS
- 
-[![Repo](https://img.shields.io/badge/Repo-GitHub-181717?style=flat-square&logo=github)](https://github.com/alfredoeinsteino2024/esp32-radar-scanner)
- 
----
- 
-## 🌾 Featured Project: HarvestIQ
- 
 > **Postharvest Intelligence for Nigerian Smallholder Farmers — Live on AWS**
- 
-Nigerian farmers lose **40% of their harvest** worth **₦5 trillion annually** — not from poor farming, but lack of information in the 72 hours after harvest. HarvestIQ solves this through USSD. No smartphone. No internet. Any phone, any network.
- 
-- 📱 **USSD platform** — farmers dial `*384*14367#` on any GSM phone to access market intelligence
-- 💰 **Real-time prices** — live commodity prices from 6 major Nigerian markets (Kano, Lagos, Onitsha, Ibadan, Kaduna, Makurdi)
-- 🤖 **AI storage advisory** — AWS Bedrock (Claude Haiku) generates crop-specific storage guidance
-- 📦 **Produce listing** — farmers list in Nigerian units (bags, crates, tubers, bunches, baskets)
-- 🔔 **SMS price alerts** — farmers set a floor price and get notified the moment the market reaches it
-- 🏪 **Buyer dashboard** — live web portal for traders to browse listings and post demand requests
-- 📲 **SMS price pipeline** — whitelisted market agents submit daily prices via SMS keyword commands
-- ☁️ **Fully serverless** — AWS Lambda, DynamoDB, API Gateway, SNS, EventBridge, Bedrock — all deployed
-- ✅ **15/15 unit tests passing**
 
-**Tech Stack:** Node.js · AWS Lambda · DynamoDB · API Gateway · AWS Bedrock · SNS · EventBridge · Africa's Talking · AWS SAM · GitHub Pages
- 
-[![Website](https://img.shields.io/badge/Website-Live-4CAF50?style=flat-square)](https://alfredoeinsteino2024.github.io/harvestiq)
-[![Dashboard](https://img.shields.io/badge/Buyer%20Dashboard-Live-2D6A2D?style=flat-square)](https://alfredoeinsteino2024.github.io/harvestiq/buyer-dashboard.html)
-[![Demo](https://img.shields.io/badge/Demo%20Video-Loom-625DF5?style=flat-square&logo=loom)](https://www.loom.com/share/80ed99dd5a3d4274bf682c34fc8fcbaa)
-[![Repo](https://img.shields.io/badge/Backend-GitHub-181717?style=flat-square&logo=github)](https://github.com/alfredoeinsteino2024/harvestiq-backend)
- 
-> Submitted to **Startup Abuja Innovation Challenge 2026** and **OPay National Innovation Challenge 2026** (Team AgroMinds, FUT Minna)
- 
----
- 
-## 🚨 Previous Project: RescueHacks Alert
- 
-> **Built for RescueHacks 2026 — Discreet USSD Emergency Alert System**
- 
-A USSD code that looks exactly like checking an airtime balance — but silently triggers a real-time emergency alert the moment it's dialed. No menu, no confirmation screen, no visible evidence on the phone.
- 
-- 📵 **No interactive menu** — emergency type is encoded directly in the dialed digits, so the response is instant with no screens shown
-- 🕶️ **Deliberately neutral response** — every dial returns an identical, boring cover message, whether or not an alert was triggered
-- 💬 **Silent WhatsApp alert** — sends emergency type, caller's number, and timestamp to a trusted contact via Meta's WhatsApp Cloud API
-- ☁️ **Serverless on AWS** — Lambda, API Gateway, SSM Parameter Store, deployed via AWS SAM
-- 📡 **Africa's Talking USSD gateway** for the discreet dial-code trigger
-- 🔭 **Long-term vision:** routing alerts to registered security operatives, with telecom partnership for lawful location assistance
+Nigerian farmers lose **40% of their harvest** (about **₦5 trillion annually**), largely from lack of information in the 72 hours after harvest. HarvestIQ delivers that information over USSD: no smartphone, no internet, any phone.
 
-[![Repo](https://img.shields.io/badge/Repo-GitHub-181717?style=flat-square&logo=github)](https://github.com/alfredoeinsteino2024/rescuehacks-alert)
- 
----
- 
-## ✈️ Project: AeroForge *(Paused)*
- 
-> **Browser-based Aircraft Aerodynamics Simulator**
- 
-A real-time wing aerodynamics simulator running entirely in the browser, powered by a C physics engine compiled to WebAssembly. Students can design any wing shape and instantly see the aerodynamic consequences. Currently paused while focus shifts to other projects.
- 
-- ⚙️ **C physics engine** implementing the Vortex Lattice Method (VLM) with Biot-Savart horseshoe vortex computation
-- 🔬 **Gaussian elimination solver** computing lift distribution across arbitrary wing geometries
-- 🌐 **Compiled to WebAssembly** via Emscripten — near-native C performance running in the browser
-- 🎮 **Three.js 3D visualization** with real-time pressure color mapping (red = high pressure, blue = low pressure)
-- 💨 **Animated streamlines** showing airflow behavior over the wing surface
-- ⚠️ **Stall warning system** — wing flashes red when angle of attack exceeds critical threshold
-- 📊 **Live CL, CD, L/D ratio, pitch moment, and lift force** — all computed from real aerodynamic equations
-- 🎛️ Parametric controls: wingspan, chord, taper, sweep angle, dihedral, angle of attack, airspeed
+- 📱 Farmers dial `*384*14367#` for **live prices** from 6 major Nigerian markets
+- 🤖 **AI storage advice** from AWS Bedrock (Claude Haiku), plus **SMS price alerts**
+- 🏪 **Buyer dashboard** for traders to browse listings and post demand requests
+- ☁️ **Serverless on AWS** with **15/15 unit tests passing**
 
-[![Repo](https://img.shields.io/badge/Repo-GitHub-181717?style=flat-square&logo=github)](https://github.com/alfredoeinsteino2024/aeroforge)
- 
----
- 
-## 🛡️ Previous Project: SensorSentinel
- 
-> **Built for UiPath AgentHack 2026 · Track 3: Agentic Software Testing with UiPath Test Cloud**
- 
-An AI-powered agentic testing platform that validates IoT device management systems using three specialized test agents orchestrated through UiPath Test Cloud.
- 
-- 🔬 **C-based IoT device simulator** generating realistic and anomalous sensor data (temp/humidity/voltage) with XOR-shift RNG and chaos injection mode
-- 🌐 **Python Flask REST API** with thread-safe deque store, severity classification, and real-time anomaly detection across 5 anomaly types
-- 📊 **Live web dashboard** with Chart.js visualizations and real-time anomaly feed
-- 🤖 **3 specialized AI test agents** — API Agent (36 tests), UI Agent (27 tests), Anomaly Detection Agent (32 tests)
-- ✅ **95/95 test cases passing** across API correctness, UI behavior, and anomaly detection accuracy
-- 🔁 **UiPath Test Cloud** as the orchestration and governance layer tying all agents together
-- 🧠 Built end-to-end with **Claude Code** — architecture, C simulator, Flask API, dashboard, and all 95 test cases
-
-[![Repo](https://img.shields.io/badge/Repo-GitHub-181717?style=flat-square&logo=github)](https://github.com/alfredoeinsteino2024/SensorSentinel)
- 
----
- 
-## 🔗 Previous Project: ChainEngineers Midnight
- 
-> **Built for MLH Midnight Hackathon 2026 · DeFi Track**
- 
-A privacy-focused embedded payment terminal designed for small merchants in Nigeria. Built as a digital twin simulator in C with SDL2, connected to a Node.js backend and the Midnight Network for confidential blockchain transactions using zero-knowledge proofs.
- 
-- 🖥️ Terminal UI in **C and SDL2** with state machine architecture and **8 screen flows**
-- 🔌 Raw **Winsock2 TCP socket** communication without external networking libraries
-- 🔒 **Zero-knowledge commitment scheme** — transaction details remain private
-- 📱 Real-time **QR code generation** for Midnight payment URIs
-- 📜 Compact **smart contract logic** implementing payment circuits
-- 🧵 Multithreaded system using **SDL threads and mutex synchronization**
-- 💱 Currency conversion between **Nigerian Naira and DUST token**
-
-[![Demo](https://img.shields.io/badge/Demo-Facebook-1877F2?style=flat-square&logo=facebook)](https://www.facebook.com/share/v/1BV5oQZhwY/)
-[![Repo](https://img.shields.io/badge/Repo-GitHub-181717?style=flat-square&logo=github)](https://github.com/alfredoeinsteino2024/chainengineers-midnight)
- 
----
- 
-## ⚡ Previous Project: ChainEngineers Solana
- 
-> **Built for Dev3Pack Global Hackathon 2026 · Solana Track**
- 
-An embedded payment terminal prototype for emerging market merchants, built as a digital twin in C with SDL2 and integrated with Solana Devnet.
- 
-- 🖥️ Terminal UI in **C and SDL2** using state machine design with **6 screens**
-- 🔌 Raw **Winsock2 TCP socket** communication without external libraries
-- 📱 Real-time **Solana Pay QR code generation**
-- ✅ Live **transaction confirmation** on Solana Devnet
-- 🧵 Multithreaded architecture using **SDL threading and mutexes**
-
-[![Demo](https://img.shields.io/badge/Demo-Loom-625DF5?style=flat-square&logo=loom)](https://www.loom.com/share/e6a757cfbf9748fab841fae9ae3bcf45)
-[![Repo](https://img.shields.io/badge/Repo-GitHub-181717?style=flat-square&logo=github)](https://github.com/alfredoeinsteino2024/chainengineers)
- 
----
- 
-## 🛠️ Tech Stack
- 
-### Languages
-![C](https://img.shields.io/badge/C-00599C?style=flat-square&logo=c&logoColor=white)
-![C++](https://img.shields.io/badge/C++-00599C?style=flat-square&logo=cplusplus&logoColor=white)
-![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=flat-square&logo=javascript&logoColor=black)
 ![Node.js](https://img.shields.io/badge/Node.js-339933?style=flat-square&logo=nodedotjs&logoColor=white)
-![Python](https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white)
-![PowerShell](https://img.shields.io/badge/PowerShell-5391FE?style=flat-square&logo=powershell&logoColor=white)
- 
-### Cloud & Serverless
 ![AWS Lambda](https://img.shields.io/badge/AWS%20Lambda-FF9900?style=flat-square&logo=awslambda&logoColor=white)
 ![DynamoDB](https://img.shields.io/badge/DynamoDB-4053D6?style=flat-square&logo=amazondynamodb&logoColor=white)
 ![AWS Bedrock](https://img.shields.io/badge/AWS%20Bedrock-FF9900?style=flat-square&logo=amazon&logoColor=white)
-![API Gateway](https://img.shields.io/badge/API%20Gateway-FF4F8B?style=flat-square&logo=amazon&logoColor=white)
-![AWS SAM](https://img.shields.io/badge/AWS%20SAM-FF9900?style=flat-square&logo=amazon&logoColor=white)
-![SNS](https://img.shields.io/badge/AWS%20SNS-FF9900?style=flat-square&logo=amazon&logoColor=white)
- 
-### USSD & Telecom
 ![Africa's Talking](https://img.shields.io/badge/Africa's%20Talking-F5A623?style=flat-square)
-![USSD](https://img.shields.io/badge/USSD-2D6A2D?style=flat-square)
-![SMS](https://img.shields.io/badge/SMS%20Gateway-4CAF50?style=flat-square)
- 
-### Systems & Graphics
-![SDL2](https://img.shields.io/badge/SDL2-1C2C3E?style=flat-square)
-![Winsock2](https://img.shields.io/badge/Winsock2-0078D4?style=flat-square&logo=windows&logoColor=white)
-![WebAssembly](https://img.shields.io/badge/WebAssembly-654FF0?style=flat-square&logo=webassembly&logoColor=white)
-![Emscripten](https://img.shields.io/badge/Emscripten-000000?style=flat-square)
-![Multithreading](https://img.shields.io/badge/Multithreaded%20Programming-555555?style=flat-square)
-![FFmpeg](https://img.shields.io/badge/FFmpeg-007808?style=flat-square&logo=ffmpeg&logoColor=white)
-![Win32 API](https://img.shields.io/badge/Win32%20API-0078D4?style=flat-square&logo=windows&logoColor=white)
- 
-### Frontend & 3D
-![Three.js](https://img.shields.io/badge/Three.js-000000?style=flat-square&logo=threedotjs&logoColor=white)
-![HTML](https://img.shields.io/badge/HTML5-E34F26?style=flat-square&logo=html5&logoColor=white)
- 
-### Backend & Testing
-![Flask](https://img.shields.io/badge/Flask-000000?style=flat-square&logo=flask&logoColor=white)
-![Express](https://img.shields.io/badge/Express-000000?style=flat-square&logo=express&logoColor=white)
-![Jest](https://img.shields.io/badge/Jest-C21325?style=flat-square&logo=jest&logoColor=white)
-![pytest](https://img.shields.io/badge/pytest-0A9EDC?style=flat-square&logo=pytest&logoColor=white)
-![Selenium](https://img.shields.io/badge/Selenium-43B02A?style=flat-square&logo=selenium&logoColor=white)
- 
-### Hardware
-![Arduino](https://img.shields.io/badge/Arduino-00878F?style=flat-square&logo=arduino&logoColor=white)
-![ESP32](https://img.shields.io/badge/ESP32-E7352C?style=flat-square)
-![ESP8266](https://img.shields.io/badge/ESP8266-E7352C?style=flat-square)
-![HC-SR04](https://img.shields.io/badge/HC--SR04%20Ultrasonic%20Sensor-007ACC?style=flat-square)
-![INA219](https://img.shields.io/badge/INA219%20Current%20Sensor-00758F?style=flat-square)
-![MAX30105](https://img.shields.io/badge/MAX30105%20Heart%20Rate%20Sensor-FF4444?style=flat-square)
-![DS18B20](https://img.shields.io/badge/DS18B20%20Temp%20Sensor-FF8800?style=flat-square)
- 
-### Agentic Testing & Orchestration
-![UiPath](https://img.shields.io/badge/UiPath%20Test%20Cloud-FA4616?style=flat-square&logo=uipath&logoColor=white)
-![Claude Code](https://img.shields.io/badge/Claude%20Code-D97757?style=flat-square)
 
-### Security & Monitoring
-![Windows Event Log](https://img.shields.io/badge/Windows%20Event%20Log-0078D4?style=flat-square&logo=windows&logoColor=white)
-![DirectShow](https://img.shields.io/badge/DirectShow-0078D4?style=flat-square&logo=windows&logoColor=white)
-![Gmail SMTP](https://img.shields.io/badge/Gmail%20SMTP-EA4335?style=flat-square&logo=gmail&logoColor=white)
- 
-### Blockchain
-![Midnight Network](https://img.shields.io/badge/Midnight%20Network-0D0D0D?style=flat-square)
-![Solana](https://img.shields.io/badge/Solana-9945FF?style=flat-square&logo=solana&logoColor=white)
-![Solana Pay](https://img.shields.io/badge/Solana%20Pay-9945FF?style=flat-square&logo=solana&logoColor=white)
- 
+[![Website](https://img.shields.io/badge/Website-Live-4CAF50?style=flat-square)](https://alfredoeinsteino2024.github.io/harvestiq)
+[![Dashboard](https://img.shields.io/badge/Buyer%20Dashboard-Live-2D6A2D?style=flat-square)](https://alfredoeinsteino2024.github.io/harvestiq/buyer-dashboard.html)
+[![Demo](https://img.shields.io/badge/Demo%20Video-Loom-625DF5?style=flat-square&logo=loom)](https://www.loom.com/share/80ed99dd5a3d4274bf682c34fc8fcbaa)
+
 ---
- 
-## 🎯 Current Projects
- 
+
+## 🛰️ Featured: ESP32 Radar Scanner
+
+> **A Search-and-Track Ultrasonic Radar, Modeled on Fire-Control Radar Behavior**
+
+An ESP32 radar that sweeps, locks onto anything in range, dwells to track it, then resumes the sweep, so a static decoy can't pin it on one bearing.
+
+- 🎯 Search → track → resume state machine on a 0°–180° servo sweep, with a buzzer that speeds up as objects get closer
+- 📡 Live WiFi telemetry (HTTP POST, JSON) to a Node backend with a real-time web dashboard
+
+![C++](https://img.shields.io/badge/C++-00599C?style=flat-square&logo=cplusplus&logoColor=white)
+![ESP32](https://img.shields.io/badge/ESP32-E7352C?style=flat-square)
+![HC-SR04](https://img.shields.io/badge/HC--SR04-007ACC?style=flat-square)
+![Node.js](https://img.shields.io/badge/Node.js-339933?style=flat-square&logo=nodedotjs&logoColor=white)
+[![Repo](https://img.shields.io/badge/Repo-GitHub-181717?style=flat-square&logo=github)](https://github.com/alfredoeinsteino2024/esp32-radar-scanner)
+
+---
+
+## 🚁 Featured: Drone Companion Controller
+
+> **Arduino Mega 2560 Controller for Automated Payload Release and Safety Monitoring**
+
+A companion controller for a drone payload system, validated in Proteus VSM before hardware bring-up.
+
+- 🔋 **I2C current monitoring** (INA219) and **ultrasonic obstacle alerts** (HC-SR04) with a dual-tone siren
+- 🎯 **PWM servo control** for payload release
+
+![C++](https://img.shields.io/badge/C++-00599C?style=flat-square&logo=cplusplus&logoColor=white)
+![Arduino](https://img.shields.io/badge/Arduino%20Mega-00878F?style=flat-square&logo=arduino&logoColor=white)
+![INA219](https://img.shields.io/badge/INA219-00758F?style=flat-square)
+![Proteus](https://img.shields.io/badge/Proteus%20VSM-1C2C3E?style=flat-square)
+[![Repo](https://img.shields.io/badge/Repo-GitHub-181717?style=flat-square&logo=github)](https://github.com/alfredoeinsteino2024/drone-companion-controller)
+
+---
+
+## 🎯 More Projects
+
 | Project | Description | Stack | Status |
 |---|---|---|---|
-| **SecurityMonitor-PowerShell** | Windows security tool — failed login detection, webcam recording, email alerts | PowerShell, FFmpeg, Win32 API, Gmail SMTP | 🚧 In Progress |
-| **Embedded Flight Controller** | ESP32 single-axis flight controller — sensor simulation and PID control architecture | C++, Arduino/ESP32 | 🚧 In Progress |
-| **Drone Companion Controller** | Arduino Mega 2560 companion controller for automated payload release, with I2C power monitoring and ultrasonic safety alerts | C++, Arduino Mega 2560, I2C | ✅ Complete |
-| **ESP32 Radar Scanner** | Search-and-track ultrasonic radar with anti-decoy dwell logic and a live dashboard | C++, ESP32, Node.js | ✅ Complete |
-| **HarvestIQ** | USSD postharvest intelligence platform for Nigerian farmers | Node.js, AWS, Africa's Talking | ✅ Live & Deployed |
-| **RescueHacks Alert** | Discreet USSD emergency alert system | AWS Lambda, Africa's Talking, WhatsApp Cloud API | ✅ Complete |
-| **AeroForge** | Browser-based aircraft aerodynamics simulator with C+WASM physics engine | C, WebAssembly, Three.js | ⏸️ Paused |
-| **FJAY Dispatch** | USSD-based campus transport/dispatch system (client project) | Node.js, AWS, Africa's Talking | ✅ Complete — Private Repo |
-| **SensorSentinel** | AI-powered agentic testing platform for IoT device management | C, Python, Flask, UiPath | ✅ Complete |
-| **ChainEngineers Midnight** | Confidential embedded payment terminal on Midnight Network | C, SDL2, ZK Proofs | ✅ Complete |
-| **ChainEngineers** | Solana-based embedded payment terminal | C, SDL2, Solana | ✅ Complete |
-| **14 C Project Challenge** | Mastering C and systems programming through project-based learning | C | 🚧 In Progress |
- 
+| [**Proteus IoT Control System**](https://github.com/alfredoeinsteino2024/proteus-iot-control-system) | Sensor-and-actuator controller (DHT22, MQ-2, TFT, relay-switched 12V loads) designed and simulated in Proteus before any hardware | C++, ESP32 (Proteus), Proteus 8 | 🚧 In Progress |
+| [**Embedded Flight Controller**](https://github.com/alfredoeinsteino2024/embedded-flight-controller) | ESP32 single-axis flight controller, built from a simulated sensor toward PID control | C++, ESP32, PlatformIO | 🚧 In Progress |
+| [**SecurityMonitor-PowerShell**](https://github.com/alfredoeinsteino2024/SecurityMonitor-PowerShell) | Windows tool that detects failed logins, records webcam footage, and sends email alerts | PowerShell, FFmpeg, Win32 API | 🚧 In Progress |
+| **14 C Project Challenge** | Learning C and systems programming through 14 projects | C | 🚧 In Progress |
+| [**RescueHacks Alert**](https://github.com/alfredoeinsteino2024/rescuehacks-alert) | Discreet USSD emergency alert that silently notifies a trusted contact via WhatsApp | AWS Lambda, Africa's Talking | ✅ Complete |
+| [**SensorSentinel**](https://github.com/alfredoeinsteino2024/SensorSentinel) | Agentic testing platform for IoT device management (UiPath AgentHack 2026), 95/95 tests passing | C, Python, Flask, UiPath | ✅ Complete |
+| [**ChainEngineers Midnight**](https://github.com/alfredoeinsteino2024/chainengineers-midnight) | Privacy-focused embedded payment terminal simulator (MLH Midnight Hackathon 2026) | C, SDL2, Node.js | ✅ Complete |
+| [**ChainEngineers Solana**](https://github.com/alfredoeinsteino2024/chainengineers) | Embedded payment terminal simulator on Solana Devnet (Dev3Pack Hackathon 2026) | C, SDL2, Solana | ✅ Complete |
+| **FJAY Dispatch** | USSD-based campus transport/dispatch system, built for a client | Node.js, AWS | ✅ Complete (private repo) |
+| [**AeroForge**](https://github.com/alfredoeinsteino2024/aeroforge) | Browser-based wing aerodynamics simulator, C physics engine compiled to WebAssembly | C, WebAssembly, Three.js | ⏸️ Paused |
+
 ---
- 
-## 📊 GitHub Stats
- 
+
+## 🛠️ Tech Stack
+
+**Languages**
+![C](https://img.shields.io/badge/C-00599C?style=flat-square&logo=c&logoColor=white)
+![C++](https://img.shields.io/badge/C++-00599C?style=flat-square&logo=cplusplus&logoColor=white)
+![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=flat-square&logo=javascript&logoColor=black)
+![Python](https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white)
+![PowerShell](https://img.shields.io/badge/PowerShell-5391FE?style=flat-square&logo=powershell&logoColor=white)
+
+**Backend & Cloud**
+![Node.js](https://img.shields.io/badge/Node.js-339933?style=flat-square&logo=nodedotjs&logoColor=white)
+![Express](https://img.shields.io/badge/Express-000000?style=flat-square&logo=express&logoColor=white)
+![Flask](https://img.shields.io/badge/Flask-000000?style=flat-square&logo=flask&logoColor=white)
+![AWS](https://img.shields.io/badge/AWS-FF9900?style=flat-square&logo=amazonaws&logoColor=white)
+![Africa's Talking](https://img.shields.io/badge/Africa's%20Talking-F5A623?style=flat-square)
+
+**Embedded & Systems**
+![Arduino](https://img.shields.io/badge/Arduino-00878F?style=flat-square&logo=arduino&logoColor=white)
+![ESP32](https://img.shields.io/badge/ESP32-E7352C?style=flat-square)
+![Proteus](https://img.shields.io/badge/Proteus-1C2C3E?style=flat-square)
+![SDL2](https://img.shields.io/badge/SDL2-1C2C3E?style=flat-square)
+![WebAssembly](https://img.shields.io/badge/WebAssembly-654FF0?style=flat-square&logo=webassembly&logoColor=white)
+![Three.js](https://img.shields.io/badge/Three.js-000000?style=flat-square&logo=threedotjs&logoColor=white)
+
+**Testing & Blockchain**
+![Jest](https://img.shields.io/badge/Jest-C21325?style=flat-square&logo=jest&logoColor=white)
+![pytest](https://img.shields.io/badge/pytest-0A9EDC?style=flat-square&logo=pytest&logoColor=white)
+![UiPath](https://img.shields.io/badge/UiPath-FA4616?style=flat-square&logo=uipath&logoColor=white)
+![Solana](https://img.shields.io/badge/Solana-9945FF?style=flat-square&logo=solana&logoColor=white)
+![Midnight](https://img.shields.io/badge/Midnight%20Network-0D0D0D?style=flat-square)
+
+---
+
 <div align="center">
 
-![GitHub Stats](https://github-readme-stats.vercel.app/api?username=alfredoeinsteino2024&show_icons=true&theme=dark&hide_border=true&bg_color=0d1117)
- 
-![Top Languages](https://github-readme-stats.vercel.app/api/top-langs/?username=alfredoeinsteino2024&layout=compact&theme=dark&hide_border=true&bg_color=0d1117)
- 
-</div>
+*"Learning by doing, through continuous system building."*
 
----
- 
-## 📫 Contact
- 
-- 🐙 **GitHub:** [github.com/alfredoeinsteino2024](https://github.com/alfredoeinsteino2024)
-- 💼 **LinkedIn:** [linkedin.com/in/toluwanimialfred](https://www.linkedin.com/in/toluwanimialfred/)
-- 🐦 **X:** [x.com/AlfredFadipe](https://x.com/AlfredFadipe)
-- 🌾 **HarvestIQ:** [alfredoeinsteino2024.github.io/harvestiq](https://alfredoeinsteino2024.github.io/harvestiq)
-- 📧 **Email:** harvestiqng@gmail.com
-
----
- 
-<div align="center">
-
-*"Learning by doing — through continuous system building."*
- 
 </div>
