@@ -12,7 +12,7 @@
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-toluwanimialfred-0A66C2?style=flat-square&logo=linkedin)](https://www.linkedin.com/in/toluwanimialfred/)
 [![X](https://img.shields.io/badge/X-AlfredFadipe-000000?style=flat-square&logo=x)](https://x.com/AlfredFadipe)
 [![HarvestIQ](https://img.shields.io/badge/HarvestIQ-Live%20Product-4CAF50?style=flat-square)](https://alfredoeinsteino2024.github.io/harvestiq)
-[![Email](https://img.shields.io/badge/Email-harvestiqng@gmail.com-EA4335?style=flat-square&logo=gmail&logoColor=white)](mailto:alfredfadipe09@gmail.com)
+[![Email](https://img.shields.io/badge/Email-alfredfadipe09@gmail.com-EA4335?style=flat-square&logo=gmail&logoColor=white)](mailto:alfredfadipe09@gmail.com)
 
 </div>
 
